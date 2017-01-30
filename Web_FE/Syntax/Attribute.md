@@ -30,6 +30,7 @@ Object.defineProperty(book, "year", {
 
 ```
 #### 定义多个属性
+
 ```
 var book = {};
 Object.defineProperties(book, {
@@ -45,6 +46,12 @@ Object.defineProperties(book, {
         get//etc...
     }
 )
+```
+
+#### 读取属性的特性
+
+```
+var descriptor = Object.getOwnPropertyDescriptor(book, "_year");
 ```
 
 ### 数据属性
